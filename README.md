@@ -1,2 +1,6 @@
-# ligen-template
-Project template for Ligen's generators.
+# ligen-cmake
+CMake project generator.
+
+### Getting Started
+
+* [Usage example](https://github.com/sensorial-systems/ligen-c/tree/main/examples/counter/README.md).
