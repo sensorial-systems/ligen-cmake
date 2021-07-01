@@ -6,10 +6,11 @@ edition       = "2018"
 description   = "CMake project generator"
 license       = "Apache-2.0"
 documentation = "https://docs.rs/ligen-cmake"
+readme        = "../../README.md"
 
 [lib]
 proc-macro = true
 
 [dependencies]
-ligen            = "0.1.13"
+ligen            = "0.1.14"
 ligen-cmake-core = "0.1.0"
