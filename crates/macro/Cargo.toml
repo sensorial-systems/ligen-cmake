@@ -1,12 +1,15 @@
 [package]
-name    = "ligen-cmake-macro"
-version = "0.1.0"
-authors = [ "Danilo Guanabara <danguafer@gmail.com>" ]
-edition = "2018"
+name          = "ligen-cmake-macro"
+version       = "0.1.0"
+authors       = [ "Danilo Guanabara <danguafer@gmail.com>" ]
+edition       = "2018"
+description   = "CMake project generator"
+license       = "Apache-2.0"
+documentation = "https://docs.rs/ligen-cmake"
 
 [lib]
 proc-macro = true
 
 [dependencies]
-ligen = { path = "../../../ligen/crates/main" }
+ligen = "0.1.13"
 ligen-cmake-core = { path = "../core" }
