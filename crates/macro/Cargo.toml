@@ -1,0 +1,12 @@
+[package]
+name    = "ligen-cmake-macro"
+version = "0.1.0"
+authors = [ "Danilo Guanabara <danguafer@gmail.com>" ]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+ligen = { path = "../../../ligen/crates/main" }
+ligen-cmake-core = { path = "../core" }
