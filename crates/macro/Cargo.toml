@@ -11,5 +11,5 @@ documentation = "https://docs.rs/ligen-cmake"
 proc-macro = true
 
 [dependencies]
-ligen = "0.1.13"
-ligen-cmake-core = { path = "../core" }
+ligen            = "0.1.13"
+ligen-cmake-core = "0.1.0"
