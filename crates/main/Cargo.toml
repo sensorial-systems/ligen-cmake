@@ -12,4 +12,4 @@ readme        = "../../README.md"
 
 [dependencies]
 ligen-cmake-macro = "0.1.2"
-ligen-cmake-core  = "0.1.2"
+ligen-cmake-core  = "0.1.4"
