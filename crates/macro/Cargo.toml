@@ -13,4 +13,4 @@ proc-macro = true
 
 [dependencies]
 ligen            = "0.1.14"
-ligen-cmake-core = "0.1."
+ligen-cmake-core = "0.1.4"
