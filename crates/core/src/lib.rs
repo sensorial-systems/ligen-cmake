@@ -1,6 +1,6 @@
 use ligen::prelude::*;
 use ligen::ir::{Attributes, Attribute, Identifier};
-use ligen::generator::{Context, FileSet, FileGenerator, FFIGenerator, ImplementationVisitor};
+use ligen::generator::{Context, FileSet, FileGenerator, FFIGenerator, ObjectVisitor};
 use ligen::generator::File;
 use std::path::PathBuf;
 
@@ -18,7 +18,7 @@ impl ligen::Generator for Generator {
 }
 
 impl FileGenerator for Generator {
-    fn generate_files(&self, context: &Context, file_set: &mut FileSet, _implementation: Option<&ImplementationVisitor>) {
+    fn generate_files(&self, context: &Context, file_set: &mut FileSet, _implementation: Option<&ObjectVisitor>) {
         let generator_version = env!("CARGO_PKG_VERSION");
         let project_name = &context.arguments.crate_name;
 
@@ -47,7 +47,7 @@ impl FileGenerator for Generator {
 }
 
 impl FFIGenerator for Generator {
-    fn generate_ffi(&self, _context: &Context, _implementation: Option<&ImplementationVisitor>) -> TokenStream {
+    fn generate_ffi(&self, _context: &Context, _implementation: Option<&ObjectVisitor>) -> TokenStream {
         Default::default()
     }
 }
